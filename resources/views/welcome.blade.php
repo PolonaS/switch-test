@@ -49,6 +49,10 @@
                 font-size: 84px;
             }
 
+            .subtitle {
+                font-size: 44px;
+            }
+
             .links > a {
                 color: #636b6f;
                 padding: 0 25px;
@@ -79,15 +83,15 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    SWITCH TEST
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                <div class="subtitle m-b-md">
+                    User: {{ \App\User::count() }}
+                </div>
+
+                <div class="subtitle m-b-md">
+                    Orders: {{ \App\Order::count() }}
                 </div>
             </div>
         </div>

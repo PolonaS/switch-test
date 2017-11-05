@@ -13,11 +13,11 @@ use Faker\Generator as Faker;
 |
 */
 
-$factory->define(App\User::class, function (Faker $faker) {
+$factory->define(App\OrderItem::class, function (Faker $faker) {
 
     return [
-        'firstname' => $faker->firstName,
-        'lastname' => $faker->lastName,
-        'parent_id' => null
+        'order_id' => null,
+        'product_id' => rand(1, (\App\Product::count()-1)),
+        'quantity' => rand(1, 3)
     ];
 });
